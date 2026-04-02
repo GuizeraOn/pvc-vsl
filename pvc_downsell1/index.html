@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛑 ÚLTIMA OPORTUNIDAD: Rescate Hepático Acelerado (50% OFF)</title>
+    <meta name="description" content="No pierdas los resultados de tu Protocolo Visión Clara. Limpia tu hígado y protege tus ojos hoy con un 50% de descuento.">
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Modern Design Tokens */
+        :root {
+            --primary: #DC2626; /* Darker red */
+            --primary-light: #EF4444;
+            --secondary: #0F172A; /* Slate 900 */
+            --text-main: #1E293B; /* Slate 800 */
+            --text-muted: #64748B; /* Slate 500 */
+            --bg-page: #FFFFFF;
+            --bg-offer: #F8FAFC; /* Slate 50 */
+            --border-offer: #CBD5E1; /* Slate 300 */
+            --shadow-premium: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reset & Base Styles */
+        * { box-sizing: border-box; }
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background-color: var(--bg-page); 
+            color: var(--text-main); 
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Alert Pulsing Banner */
+        .alert-banner {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            text-align: center;
+            padding: 16px 12px;
+            font-weight: 800;
+            font-size: clamp(14px, 4vw, 16px);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            animation: pulse-bg 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        @keyframes pulse-bg {
+            0%, 100% { background-color: #DC2626; transform: scale(1); }
+            50% { background-color: #B91C1C; }
+        }
+
+        /* Main Layout */
+        .content-container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Heading Styles */
+        .headline {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(28px, 8vw, 36px);
+            color: var(--secondary);
+            text-align: center;
+            margin: 0;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+        }
+
+        /* Body Copy */
+        .body-copy {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--text-main);
+        }
+
+        .body-copy p {
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Offer Box System */
+        .offer-box {
+            background-color: var(--bg-offer);
+            border: 2px dashed var(--border-offer);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-box::before {
+            content: "🔥 OFERTA LÍMITADA";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .offer-desc {
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .strike {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 20px;
+            opacity: 0.7;
+        }
+
+        .price-now {
+            font-family: 'Outfit', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .urgency-note {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 12px;
+        }
+
+        /* Hotmart Widget Container */
+        #widget-wrapper {
+            margin-top: 20px;
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Footer / Safety Bar */
+        .footer-safe {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid #E2E8F0;
+            padding-top: 20px;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 480px) {
+            .content-container { padding: 30px 20px; }
+            .offer-box { padding: 24px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="alert-banner" id="announcement-bar">
+        🛑 ¡ÚLTIMA OPORTUNIDAD ANTES DE CERRAR TU ORDEN!
+    </header>
+
+    <main class="content-container">
+        <h1 class="headline" id="main-heading">Entiendo perfectamente...</h1>
+        
+        <article class="body-copy">
+            <p>Sé que adquirir un programa adicional hoy quizás no estaba en tus planes o presupuesto original.</p>
+            
+            <p>Pero como especialista, no me perdonaría dejarte ir sin limpiar el filtro principal de tu sangre: <strong class="highlight-text">tu hígado</strong>.</p>
+            
+            <p>Si no lo haces, la sangre espesa y llena de toxinas volverá a subir a tu cabeza, tapando nuevamente los delicados capilares de tus ojos y saboteando por completo los resultados que vas a conseguir con el <em>Protocolo Visión Clara</em>. No quiero que todo tu esfuerzo sea en vano.</p>
+            
+            <p>Por eso, he decidido hacer algo muy especial por ti. No quiero que el dinero sea un obstáculo para tu recuperación visual.</p>
+        </article>
+
+        <section class="offer-box" id="special-offer">
+            <p class="offer-desc">
+                Quiero darte acceso completo al programa <strong>Rescate Hepático Acelerado</strong> (incluyendo los 2 bonos gratuitos) con un <span class="highlight-text">50% DE DESCUENTO ABSOLUTO</span>.
+            </p>
+            
+            <div class="price-container">
+                <span class="strike">$27.00</span>
+                <span class="price-now">SOLO $13.50</span>
+            </div>
+
+            <p class="urgency-note">
+                Esta es literalmente mi mejor oferta. No la verás en ningún otro lugar, y esta página no volverá a aparecer. Protege tus ojos de forma definitiva ahora mismo.
+            </p>
+            
+            <!-- Hotmart Widget -->
+            <div id="widget-wrapper">
+                <div id="hotmart-sales-funnel"></div>
+                <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+                <script>
+                    // Simple init for Hotmart Sales Funnel widget
+                    if (typeof checkoutElements !== 'undefined') {
+                        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+                    } else {
+                        console.error('Hotmart library not loaded');
+                    }
+                </script>
+            </div>
+        </section>
+
+        <footer class="footer-safe">
+            &copy; 2026 Protocolo Visión Clara | Rescate Hepático Acelerado
+        </footer>
+    </main>
+
+    <!-- Optional: Micro-interaction script -->
+    <script>
+        // Smooth scroll for any links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
